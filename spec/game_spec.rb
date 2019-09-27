@@ -23,4 +23,21 @@ describe Game do
       expect { game.attack(chris) }.to change { chris.hit_points }.by(-10)
     end
   end
+
+  describe '#player_turn' do
+    it 'starts as player 1' do
+      john = Player.new('John')
+      chris = Player.new('Chris')
+      game = Game.new(john, chris)
+      expect(game.player_turn).to eq john
+    end
+
+    it 'changes the turn after an attack' do
+      john = Player.new('John')
+      chris = Player.new('Chris')
+      game = Game.new(john, chris)
+      game.switch_turns
+      expect(game.player_turn).to eq chris
+    end
+  end
 end

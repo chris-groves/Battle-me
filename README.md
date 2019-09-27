@@ -16,4 +16,8 @@ I want to attack Player 2, and I want to get a confirmation
 As Player 1,
 So I can start to win a game of Battle,
 I want my attack to reduce Player 2's HP
+
+As two Players,
+So we can continue our game of Battle,
+We want to switch turns
 ```
