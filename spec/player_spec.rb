@@ -12,14 +12,4 @@ describe Player do
       expect(chris.hit_points).to eq Player::STARTING_HIT_POINTS
     end
   end
-
-  describe '#attack' do
-    it 'reduces hit points' do
-      john = Player.new('John')
-      chris = Player.new('Chris')
-      expect { john.attack(chris) }.to change { chris.hit_points }.by(-10)
-    end
-  end
-
-
 end
