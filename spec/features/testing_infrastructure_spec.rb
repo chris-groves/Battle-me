@@ -1,4 +1,4 @@
-require './app'
+# require './app'
 
 
 # feature 'Testing infrastructure' do
